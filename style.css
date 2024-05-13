@@ -109,6 +109,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+
+    z-index: 50;
+    background-color: white;
 }
 
 * {
@@ -126,9 +129,11 @@ header div {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px 0;
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 100;
 }
 
 #subheader * {
