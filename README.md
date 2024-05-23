@@ -17,3 +17,39 @@ MoResto est un système de réservation en ligne pour le restaurant universitair
 Simplifiez votre routine alimentaire dès maintenant avec MoResto !
 
 © 2024 
+
+
+index.php
+pages/
+├── connexion.php
+├── menu.php
+├── paiement.php
+└── historique.php
+includes/
+├── controleurs/
+│   ├── reservation.php
+│   └── connexion.php
+└── vue/
+    ├── connexion.vue.php
+    ├── menu.vue.php
+    ├── paimenent.vue.php
+    ├── historique.vue.php
+    ├── header.php
+    └── footer.php
+styles/
+└── style.css
+scripts/
+└── script.js
+assets/
+├── fonts/
+│   └── fonts
+└── images/
+    ├── repas/
+    │   ├── entree.png
+    │   ├── plat.png
+    │   └── dessert.php
+    ├── attente.pnh
+    ├── back.png
+    ├── crous_restauration.png
+    ├── pay.png
+    └── republique_francaise.png
