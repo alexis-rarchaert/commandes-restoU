@@ -1,0 +1,259 @@
+/* Marianne-Bold_Italic.woff, Marianne-Bold_Italic.woff2, Marianne-Bold.woff, Marianne-Bold.woff2, Marianne-Italic.woff, Marianne-Italic.woff2, Marianne-Regular.woff, Marianne-Regular.woff2 */
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Bold.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Bold_Italic.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Bold_Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-ExtraBold_Italic.woff2') format('woff2'),
+         url('assets/fonts/Marianne-ExtraBold_Italic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-ExtraBold.woff2') format('woff2'),
+         url('assets/fonts/Marianne-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Light_Italic.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Light_Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Light.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Medium_Italic.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Medium_Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Medium.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Regular_Italic.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Regular_Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Regular.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Thin_Italic.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Thin_Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('assets/fonts/Marianne-Thin.woff2') format('woff2'),
+         url('assets/fonts/Marianne-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+    --orange-crous: #F36421;
+}
+
+body {
+    margin: 0 auto;
+    /*padding: 20px 48px 48px 48px;*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    z-index: 50;
+    background-color: white;
+}
+
+* {
+    font-family: 'Marianne', sans-serif;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#subheader {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 100;
+}
+
+#subheader * {
+    margin: 0 10px 0 10px;
+}
+
+#subheader a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.button {
+    background-color: var(--orange-crous);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 500px;
+    text-decoration: none;
+    border: none;
+    max-width: max-content;
+}
+
+main #background {
+    background-image: url("../assets/images/back.png");
+    height: 50vh;
+
+    color:white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #background h1, main #background p {
+    margin: 0;
+}
+
+#sideside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+#sideside #right p {
+    margin: 30px 0;
+}
+
+#stylized-right {
+    background-color: var(--orange-crous);
+    border-radius: 50px 0 0 50px;
+    padding: 20px;
+    color: white;
+}
+
+#stylized-left {
+    background-color: var(--orange-crous);
+    border-radius: 0 50px 50px 0;
+    padding: 20px;
+    color: white;
+    width: 25%;
+}
+
+main > div  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10%;
+}
+
+#menu .card {
+    width: 30%;
+    padding: 40px;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .card img {
+    border-radius: 50%;
+    position: relative;
+    top: -25%;
+    bottom: 0;
+}
+
+#menu .card h2 {
+    text-align: center;
+    margin-top: -20%;
+}
+
+#menu .card input[type="checkbox"] {
+    display: none;
+}
+
+#menu .card label:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.164);
+    margin-top: 10px;
+}
+
+#menu .card input[type="checkbox"]:checked + label {
+    color: var(--orange-crous);
+    font-weight: 600;
+}
+
+#popup {
+    /*display: none;*/
+}

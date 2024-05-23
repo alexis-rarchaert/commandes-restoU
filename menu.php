@@ -6,27 +6,12 @@
 
     <title>RestoU &bull; Commandez en ligne</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="assets/images/republique_francaise.png" alt="Logo de la République Française" class="logo">
-            <img src="assets/images/crous_restauration.png" alt="Logo du CROUS Restauration" class="logo">
-        </div>
-        <div>
-            <a href="#" class="button">
-                Commander
-            </a>
-        </div>
-    </header>
-    <div id="subheader">
-        <a href="#">Menu du jour</a>
-        &bull;
-        <a href="#">Modes de paiement</a>
-        &bull;
-        <a href="#">Page</a>
-    </div>
+    <?php
+    include("includes/vue/header.php");
+    ?>
     
     <main>
         <h2 id="stylized-left">
@@ -94,7 +79,7 @@
        
     </main>
 
-    <script src="javascript/script.js"></script>
+    <script src="../scripts/script.js"></script>
 
     <script>
         // On click on label, check the checkbox
