@@ -10,7 +10,7 @@ pages/
 includes/
 ├── controleurs/
 │   ├── reservation.php
-│   └── connexion.php
+│   └── database.php
 └── vue/
     ├── connexion.vue.php
     ├── menu.vue.php

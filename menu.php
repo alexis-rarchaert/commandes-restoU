@@ -43,13 +43,19 @@
     
     
                     <input type="checkbox" name="entree1">
-                    <label for="entree1">Carottes rapées</label>
+                    <label for="entree1">Spaghetti</label>
                     
                     <input type="checkbox" name="entree2">
-                    <label for="entree2">Pizza</label>
+                    <label for="entree2">Hachis Parmentier</label>
                     
                     <input type="checkbox" name="entree3">
-                    <label for="entree3">Oeufs mayonnaise</label>
+                    <label for="entree3">Ratatouille</label>
+
+                    <input type="checkbox" name="entree3">
+                    <label for="entree3">Poisson Pas-Né</label>
+
+                    <input type="checkbox" name="entree3">
+                    <label for="entree3">Steak végétal</label>
                 </div>
     
                 <div class="card">
@@ -68,18 +74,20 @@
                 </div>
             </div>
             
-            <a href="#" class="button" id="OpenPopup">
-                Commander
-            </a>
+            <div id="commanderbutton">
+                <a class="button" id="OpenPopup">
+                    Commander
+                </a>
+            </div>
         </div>
 
         <div id="popup">
-
+            <span id="close">&times;</span>
         </div>
        
     </main>
 
-    <script src="../scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 
     <script>
         // On click on label, check the checkbox
@@ -92,10 +100,15 @@
 
         const popupButton = document.getElementById('OpenPopup');
         const popup = document.getElementById('popup');
+        const close = document.getElementById('close');
 
         popupButton.addEventListener('click', () => {
             popup.style.display = 'block';
-        })
+        });
+
+        close.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
     </script>
 </body>
 </html>
