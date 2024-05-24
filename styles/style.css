@@ -156,6 +156,12 @@ header div {
     max-width: max-content;
 }
 
+#commanderbutton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+}
+
 main #background {
     background-image: url("../assets/images/back.png");
     height: 50vh;
@@ -196,7 +202,8 @@ main #background h1, main #background p {
     border-radius: 0 50px 50px 0;
     padding: 20px;
     color: white;
-    width: 25%;
+    width: max-content;
+    padding-right: 40px;
 }
 
 main > div  {
@@ -210,7 +217,9 @@ main > div  {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #menu .card {
@@ -255,5 +264,29 @@ main > div  {
 }
 
 #popup {
-    /*display: none;*/
+    display: none;
+    position: fixed;
+    background-color: #fefefe;
+}
+
+#connexion {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#connexion [type="text"], #connexion [type="password"] {
+    height: 2em;
+    padding: 5px;
 }

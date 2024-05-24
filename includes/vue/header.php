@@ -7,7 +7,7 @@
     </div>
     <div>
         <a href="#" class="button">
-            Commander
+            Se connecter
         </a>
     </div>
 </header>
@@ -16,5 +16,5 @@
     &bull;
     <a href="#">Modes de paiement</a>
     &bull;
-    <a href="#">Page</a>
+    <a href="#">Historique</a>
 </div>
