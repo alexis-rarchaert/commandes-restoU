@@ -6,7 +6,7 @@
         </a>
     </div>
     <div>
-        <a href="#" class="button">
+        <a href="connexion.php" class="button">
             Se connecter
         </a>
     </div>
@@ -16,5 +16,5 @@
     &bull;
     <a href="#">Modes de paiement</a>
     &bull;
-    <a href="#">Historique</a>
+    <a href="historique.php">Historique</a>
 </div>
