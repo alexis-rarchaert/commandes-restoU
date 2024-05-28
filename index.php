@@ -19,11 +19,11 @@
             <p>Réservez votre repas à Castres</p>
         </div>
 
-        <div id="sideside">
-            <div id="left">
+        <div class="sideside">
+            <div class="left">
                 <img src="assets/images/attente.png" alt="Illustration d'une personne attendant" class="illustration">
             </div>
-            <div id="right">
+            <div class="right">
                 <h2 id="stylized-right">
                     Fini l'attente, réservez votre repas en 3 clics
                 </h2>
@@ -37,7 +37,35 @@
                 </a>
             </div>
         </div>
+
+        <div class="sideside ml-50">
+            <div class="left">
+                <h2>
+                    Payez là ou vous le désirez.
+                </h2>
+
+                <p>
+                    Notre système de paiement en ligne vous permet de régler votre repas de la manière qui vous convient le mieux. Choisissez parmi une variété de modes de paiement, y compris les cartes de crédit, les cartes de débit et les paiements mobiles. Vous pouvez également choisir de payer en ligne ou en personne, selon vos préférences. Notre système de paiement sécurisé garantit que vos informations personnelles et financières sont protégées à tout moment. Profitez de la commodité de payer en ligne ou en personne et choisissez le mode de paiement qui vous convient le mieux. Simplifiez votre expérience de restauration et profitez de la flexibilité de notre système de paiement en ligne dès aujourd'hui !
+                </p>
+
+                <a href="menu.php" class="button">
+                    Réserver
+                </a>
+            </div>
+            <div class="right">
+                <img src="assets/images/attente.png" alt="Illustration d'une personne attendant" class="illustration">
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <div>
+            <img src="assets/images/crous_restauration.png" alt="Logo de l'application" id="logo">
+        </div>
+        <div>
+            <a href="#">LESCROUS.FR</a> | <a href="#">MENU DU JOUR</a> | <a href="#">MODES DE PAIEMENT</a> | <a href="#">HISTORIQUE</a>
+        </div>
+    </footer>
 
 <script src="scripts/script.js"></script>
 </body>

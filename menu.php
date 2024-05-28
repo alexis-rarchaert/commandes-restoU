@@ -81,9 +81,39 @@
             </div>
         </div>
 
-        <div id="popup">
-            <span id="close">&times;</span>
+        <div id="ext-popup">
+            <div id="popup">
+                <h2>Finalisez la commande de votre repas</h2>
+                <hr>
+                <p>Entrée sélectionnée: <span></span></p>
+                <p>Plat sélectionné: <span></span></p>
+                <p>Dessert sélectionné: <span></span></p>
+                <br>
+                <p>Heure de la collecte: 
+                    <select>
+                        <option value="11:30">11h30</option>
+                        <option value="11:45">11h45</option>
+                        <option value="12:00">12h00</option>
+                        <option value="12:15">12h15</option>
+                        <option value="12:30">12h30</option>
+                        <option value="12:45">12h45</option>
+                        <option value="13:00">13h00</option>
+                        <option value="13:15">13h15</option>
+                        <option value="13:30">13h30</option>
+                    </select>
+                </p>
+
+                <input type="checkbox" name="pain" id="pain">
+                <label for="pain">Souhaitez-vous du pain ?</label>
+                
+                <br><input type="text" name="instructions" id="instructions" placeholder="Donnez une instruction à la personne chargée de la préparation de votre repas">
+
+                <a class="button" id="OpenPopup">
+                    Valider la commande
+                </a>
+            </div>
         </div>
+        
        
     </main>
 
@@ -99,15 +129,12 @@
         });
 
         const popupButton = document.getElementById('OpenPopup');
+        const extPopup = document.getElementById('ext-popup');
         const popup = document.getElementById('popup');
-        const close = document.getElementById('close');
 
         popupButton.addEventListener('click', () => {
-            popup.style.display = 'block';
-        });
-
-        close.addEventListener('click', () => {
-            popup.style.display = 'none';
+            console.log('click');
+            extPopup.style.display = 'block';
         });
     </script>
 </body>
