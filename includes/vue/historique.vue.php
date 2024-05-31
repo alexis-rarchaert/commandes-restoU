@@ -3,6 +3,15 @@
         Historique
     </h2>
 
+    <?php
+
+        if(isset($_GET["login"]) && $_GET["login"] == "success") {
+            echo "<div class='success'><b>Succès !</b>Vous vous êtes bien connecté.</div>";
+        } else if(isset($_GET["login"]) && $_GET["login"] == "already") {
+            echo "<div class='already'><b>Vous n'avez pas été connecté !</b> Vous étiez déjà connecté</div>";
+        } 
+        ?>
+
     <!-- En tete tabelau -->
     <table>
         <thead>

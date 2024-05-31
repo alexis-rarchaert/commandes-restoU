@@ -6,9 +6,14 @@
         </a>
     </div>
     <div>
-        <a href="connexion.php" class="button">
-            Se connecter
-        </a>
+        <?php
+            if(isset($_SESSION["nom"]) && isset($_SESSION["prenom"])) {
+                echo '<a href="connexion.php" class="button">'.$_SESSION["prenom"].' '.substr($_SESSION["nom"], 0, 1).'.</a>';
+            } else {
+                echo '<a href="connexion.php" class="button">Se connecter</a>';
+            }
+        ?>
+        
     </div>
 </header>
 <div id="subheader">

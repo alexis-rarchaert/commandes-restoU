@@ -19,6 +19,12 @@
             <p>Réservez votre repas à Castres</p>
         </div>
 
+        <?php
+        if(isset($_GET["login"]) && $_GET["login"] == "error") {
+            echo "<div class='error'><b>Vous n'avez pas été connecté !</b> Votre mot de passe ou adresse mail est incorrecte</div>";
+        } 
+        ?>
+
         <div class="sideside">
             <div class="left">
                 <img src="assets/images/attente.png" alt="Illustration d'une personne attendant" class="illustration">
